@@ -1,5 +1,9 @@
 # acfgm-pytorch
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/acfgm-pytorch?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/acfgm-pytorch)
+[![PyPI](https://img.shields.io/pypi/v/ACFGM-pytorch.svg?color=blue)](https://pypi.org/project/ACFGM-pytorch/)
+![License](https://img.shields.io/github/license/JGIoA/ACFGM-pytorch.svg?color=blue)
+
 `acfgm-pytorch` is a PyTorch optimizer implementation of the Auto-Conditioned Fast Gradient Method (AC-FGM) from [A simple uniformly optimal method without line search for convex optimization](https://arxiv.org/abs/2310.10082v2) (Version v2).
 
 AC-FGM is an accelerated first-order method designed for convex optimization without the need for estimating the global Lipschitz constant. Instead of asking the user to tune a fixed learning rate, the method estimates local curvature from previous gradients and updates its step size automatically. This package wraps that implementation in `torch.optim.Optimizer` interface so it can be used with tensors, custom objectives, and standard `torch.nn.Module` parameters.
